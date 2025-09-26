@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Chatbot Steam - Gradio Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-color: #f0f0f0; 
+        }
+        h1 {
+            color: #333;
+        }
+        gradio-app {
+            max-width: 800px; /* Limita o tamanho do app */
+            margin: 20px auto;
+            display: block;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>🤖 Meu Chatbot para Steam</h1>
+    <p>Interaja com o modelo de IA diretamente aqui:</p>
+    
+    <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/5.42.0/gradio.js"></script>
+    <gradio-app src="https://claumach-steamchatbot.hf.space"></gradio-app>
+    
+    <p>O aplicativo está sendo executado e incorporado diretamente do Hugging Face Spaces.</p>
+</body>
+</html>
